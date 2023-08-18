@@ -1,0 +1,13 @@
+# Django setup with Docker
+version: '3.7'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 8000:8000
+
