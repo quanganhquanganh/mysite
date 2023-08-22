@@ -1,1 +1,1 @@
-cd locallibrary && python3 manage.py makemigrations && python3 manage.py migrate
+python3 locallibrary/manage.py makemigrations && python3 locallibrary/manage.py migrate
