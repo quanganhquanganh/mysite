@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+{% block title %}{{ section.title }}{% endblock %}
+{% block content %}
+<h1>{{ section.title }}</h1>
+<ul>
+{% for story in story_list %}
+<li><a href="{{ story.get_absolute_url }}">{{ story.headline }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
