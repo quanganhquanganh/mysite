@@ -26,7 +26,7 @@ SECRET_KEY = '=gs*by@&xgb(y5==^zkhu2$i)oi4!t(21!0$1wzggux3b=@!i4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arcane-shore-75039-8d9eabbe294b.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
