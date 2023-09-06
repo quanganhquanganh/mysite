@@ -8,3 +8,15 @@ module "django" {
   default_from_email     = var.default_from_email
   enable_api_gatewayv2   = true
 }
+
+output "api_gatewayv2_url" {
+  value = module.django.this_invoke_url
+}
+
+output "createdb_result" {
+  value = module.django.this_createdb
+}
+
+output "migrate_result" {
+  value = module.django.this_migrate
+}

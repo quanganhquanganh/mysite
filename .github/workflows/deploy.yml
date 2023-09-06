@@ -7,7 +7,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -97,7 +97,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: "master"
+        ref: "main"
     - uses: hashicorp/setup-terraform@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}

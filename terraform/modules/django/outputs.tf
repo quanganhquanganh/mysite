@@ -8,6 +8,11 @@ output "this_createdb" {
   value       = "${data.aws_lambda_invocation.createdb.*.result}"
 }
 
+output "this_migrate" {
+  description = "Result of migration Lambda execution"
+  value       = "${data.aws_lambda_invocation.migrate.*.result}"
+}
+
 output "staticfiles_access_key_id" {
   description = "The access key ID with access to staticfiles s3 bucket."
   value       = module.s3_user_staticfiles.access_key_id
