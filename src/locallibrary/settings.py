@@ -3,6 +3,7 @@ Django settings for Local Library project.
 """
 
 import environs
+import os
 
 # Read env variables
 # https://github.com/sloria/environs

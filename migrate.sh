@@ -1,1 +1,0 @@
-python3 locallibrary/manage.py makemigrations && python3 locallibrary/manage.py migrate
