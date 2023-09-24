@@ -1,8 +1,3 @@
-output "this_invoke_url" {
-  description = "The URL to invoke the API pointing to the stage"
-  value       = aws_api_gateway_deployment.lambda.*.invoke_url
-}
-
 output "this_createdb" {
   description = "Result of createdb Lambda execution"
   value       = "${data.aws_lambda_invocation.createdb.*.result}"
